@@ -9,17 +9,23 @@ import SwiftUI
 
 struct EntryView: View {
     var body: some View {
-        ZStack {
-            Image(systemName: "circle")
-                .font(.system(size: 280))
-                .foregroundStyle(.green)
-            Image(systemName: "bolt.fill")
-                .foregroundStyle(.white)
-                .font(.system(size: 150))
+        NavigationView{
+            //Creating a button
+            NavigationLink(destination: GalleryView()) {
+                ZStack {
+                    Image(systemName: "circle")
+                        .font(.system(size: 280))
+                        .foregroundStyle(.green)
+                    Image(systemName: "bolt.fill")
+                        .foregroundStyle(.white)
+                        .font(.system(size: 150))
+                }
+                .padding()
+                
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+            .background(Color.black)
         }
-        .padding()
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color.black)
     }
     
 }

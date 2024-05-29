@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */; };
-		64CE2D2B2C07697700CDBC8C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D2A2C07697700CDBC8C /* ItemView.swift */; };
+		64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D2A2C07697700CDBC8C /* GalleryView.swift */; };
 		64CE2D2D2C07697800CDBC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2C2C07697800CDBC8C /* Assets.xcassets */; };
 		64CE2D302C07697800CDBC8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */; };
 		64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D362C0769AD00CDBC8C /* EntryView.swift */; };
+		64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D392C07719800CDBC8C /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		64CE2D252C07697700CDBC8C /* BatteryLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryLifeApp.swift; sourceTree = "<group>"; };
-		64CE2D2A2C07697700CDBC8C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		64CE2D2A2C07697700CDBC8C /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
 		64CE2D2C2C07697800CDBC8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64CE2D362C0769AD00CDBC8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
+		64CE2D392C07719800CDBC8C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +74,8 @@
 		64CE2D382C0769B600CDBC8C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				64CE2D2A2C07697700CDBC8C /* ItemView.swift */,
+				64CE2D2A2C07697700CDBC8C /* GalleryView.swift */,
+				64CE2D392C07719800CDBC8C /* ItemView.swift */,
 				64CE2D362C0769AD00CDBC8C /* EntryView.swift */,
 			);
 			path = View;
@@ -148,9 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64CE2D2B2C07697700CDBC8C /* ItemView.swift in Sources */,
+				64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */,
 				64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */,
 				64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */,
+				64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
