@@ -9,6 +9,8 @@ import SwiftUI
 
 struct NewDeviceView: View {
     var body: some View {
+        
+        
         NavigationStack {
             VStack{
                 //image and name of device
@@ -35,27 +37,36 @@ struct NewDeviceView: View {
                         .font(.system(size: 70))
                 }
                 .foregroundStyle(.green)
+                
                 Spacer()
             }
             .padding(.top)
             .toolbar {
-                Spacer()
                 ToolbarItem(placement: .bottomBar) {
-                    Image(systemName: "gear")
+                    Spacer()
                 }
-                Spacer()
                 ToolbarItem(placement: .bottomBar) {
-                    Image(systemName: "trash")
+                    Image(systemName: "gear.circle.fill")
                 }
-                Spacer()
+                ToolbarItem(placement: .bottomBar) {
+                    Spacer()
+                }
+                ToolbarItem(placement: .bottomBar) {
+                    Image(systemName: "trash.circle.fill")
+                }
+                ToolbarItem(placement: .bottomBar) {
+                    Spacer()
+                }
                 ToolbarItem(placement: .bottomBar) {
                     Image(systemName: "house.circle.fill")
                 }
-                Spacer()
+                ToolbarItem(placement: .bottomBar) {
+                    Spacer()
+                }
             }
+            .font(.system(size: 40))
         }
     }
-    
 }
 
 #Preview {
