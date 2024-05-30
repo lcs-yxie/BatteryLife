@@ -36,7 +36,11 @@ struct GalleryView: View {
                     ItemView()
                     ItemView()
                     ItemView()
-                    Spacer()
+                    //Adding new device
+                        Image(systemName: "plus.circle.fill")
+                            .padding(.trailing, 65)
+                            .font(.system(size: 220))
+                            .foregroundColor(.white)
                     
                 }
                 .padding(.top)
