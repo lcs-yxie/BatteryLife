@@ -9,32 +9,51 @@ import SwiftUI
 
 struct NewDeviceView: View {
     var body: some View {
-        
-        VStack{
-            Spacer()
-            Text("My Airpods")
-                .fontWeight(.heavy)
-                .font(.system(size: 80))
-            HStack{
-                Image(systemName: "airpods")
+        NavigationStack {
+            VStack{
+                //image and name of device
+                Text("My Airpods")
+                    .fontWeight(.heavy)
                     .font(.system(size: 80))
-                    .padding(.leading, 40)
-                
+                HStack{
+                    Image(systemName: "airpods")
+                        .font(.system(size: 80))
+                        .padding(.leading, 40)
+                    
                     Spacer()
+                }
+                .padding(.bottom)
+                
+                ZStack{
+                    //battery cricle
+                    Image(systemName: "circle")
+                        .font(.system(size: 280))
+                    
+                    //battery percentage
+                    Text("78%")
+                        .fontWeight(.heavy)
+                        .font(.system(size: 70))
+                }
+                .foregroundStyle(.green)
+                Spacer()
             }
-            Spacer()
-            
-            ZStack{
-                Image(systemName: "circle")
-                    .font(.system(size: 280))
-                    .foregroundStyle(.green)
-                Text("78%")
-                fontWeight(.heavy)
-                .font(.system(size: 50))
+            .padding(.top)
+            .toolbar {
+                Spacer()
+                ToolbarItem(placement: .bottomBar) {
+                    Image(systemName: "gear")
+                }
+                Spacer()
+                ToolbarItem(placement: .bottomBar) {
+                    Image(systemName: "trash")
+                }
+                Spacer()
+                ToolbarItem(placement: .bottomBar) {
+                    Image(systemName: "house.circle.fill")
+                }
+                Spacer()
             }
-            Spacer()
         }
-        .padding(.bottom)
     }
     
 }
