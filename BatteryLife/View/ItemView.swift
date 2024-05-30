@@ -18,7 +18,7 @@ struct ItemView: View {
                 .scaledToFit()
                 .foregroundColor(.black)
                 .cornerRadius(10)
-                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                .frame(width: 200, height: 200)
                 .padding()
                 .background {
                     //background round square

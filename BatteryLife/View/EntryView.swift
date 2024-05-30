@@ -23,8 +23,7 @@ struct EntryView: View {
                 .padding()
                 
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .background(Color.black)
+            
         }
     }
     
@@ -32,4 +31,5 @@ struct EntryView: View {
 
 #Preview {
     EntryView()
+        .preferredColorScheme(.dark)
 }

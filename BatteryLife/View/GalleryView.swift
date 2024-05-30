@@ -10,23 +10,48 @@ import SwiftUI
 struct GalleryView: View {
     var body: some View {
         
-        ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 80) {
-                ItemView()
-                ItemView()
-                ItemView()
-                }
-            .frame(width: 770, height: 350)
-            }
-        
-        .padding()
-        
-
-    }
+        VStack{
     
+            Spacer()
+            
+            //Text at the top
+            Group{
+                Text("Battery")
+                Text("Life")
+                    .padding(.trailing, 115)
+            }
+            .bold()
+            .font(.system(size: 70))
+            
+            Spacer()
+            
+            //Text in the middle
+            Text("Your Devices:")
+                .fontWeight(.heavy)
+            
+            //Scroll Window at the bottom
+            ScrollView(.horizontal, showsIndicators: false) {
+                HStack(alignment: .top, spacing: 75) {
+                    Spacer()
+                    ItemView()
+                    ItemView()
+                    ItemView()
+                    Spacer()
+                    
+                }
+                .padding(.top)
+                .padding(.bottom)
+            
+                
+            }
+            Spacer()
+            Spacer()
+        }
+        .padding(.top)
+    }
 }
 
 #Preview {
     GalleryView()
-    .preferredColorScheme(.dark)
+        .preferredColorScheme(.dark)
 }
