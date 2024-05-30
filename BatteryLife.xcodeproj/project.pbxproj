@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A35982C08D15400DA8F6B /* NewDeviceView.swift */; };
 		64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */; };
 		64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D2A2C07697700CDBC8C /* GalleryView.swift */; };
 		64CE2D2D2C07697800CDBC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2C2C07697800CDBC8C /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		641A35982C08D15400DA8F6B /* NewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceView.swift; sourceTree = "<group>"; };
 		64CE2D252C07697700CDBC8C /* BatteryLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryLifeApp.swift; sourceTree = "<group>"; };
 		64CE2D2A2C07697700CDBC8C /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				64CE2D2A2C07697700CDBC8C /* GalleryView.swift */,
+				641A35982C08D15400DA8F6B /* NewDeviceView.swift */,
 				64CE2D392C07719800CDBC8C /* ItemView.swift */,
 				64CE2D362C0769AD00CDBC8C /* EntryView.swift */,
 			);
@@ -154,6 +157,7 @@
 				64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */,
 				64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */,
 				64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */,
+				641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */,
 				64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,21 +11,21 @@ import SwiftUI
 struct ItemView: View {
     var body: some View {
         
-        ZStack{
-            
-            //background round square
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(.green, lineWidth: 20)
-                .fill(.white)
-                .frame(width: 250, height: 250)
-            
+       
             //Symbol in the center
             Image(systemName: "macbook")
+                .resizable()
+                .scaledToFit()
                 .foregroundColor(.black)
                 .cornerRadius(10)
-                .font(.system(size: 130))
-            
-        }
+                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 100)
+                .padding()
+                .background {
+                    //background round square
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(.green, lineWidth: 20)
+                        .fill(.white)
+                }
         
         
     }

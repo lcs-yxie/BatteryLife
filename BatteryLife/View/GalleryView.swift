@@ -10,12 +10,15 @@ import SwiftUI
 struct GalleryView: View {
     var body: some View {
         
-        ScrollView(.horizontal) {
-            HStack(spacing: 20) {
-                    ItemView()
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(spacing: 80) {
+                ItemView()
+                ItemView()
+                ItemView()
                 }
-            .frame(width: 350, height: 350)
+            .frame(width: 770, height: 350)
             }
+        
         .padding()
         
 
@@ -25,5 +28,5 @@ struct GalleryView: View {
 
 #Preview {
     GalleryView()
-        .preferredColorScheme(.dark)
+    .preferredColorScheme(.dark)
 }
