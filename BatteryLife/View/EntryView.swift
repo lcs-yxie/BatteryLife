@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EntryView: View {
     var body: some View {
-        NavigationView{
+        NavigationStack{
             //Creating a button
             NavigationLink(destination: GalleryView()) {
                 ZStack {
