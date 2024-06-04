@@ -51,13 +51,14 @@ struct GalleryView: View {
                 }
             }
         }
-        
+        .navigationBarBackButtonHidden(true)
         
         
     }
+    
 }
 
 #Preview {
     GalleryView()
-        .preferredColorScheme(.dark)
+    .preferredColorScheme(.dark)
 }

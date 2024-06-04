@@ -98,7 +98,7 @@ struct NewDeviceView_Previews: PreviewProvider {
                     Label("Data", systemImage: "chart.bar.fill")
                 }
             
-            Text("Setting")
+            SettingView()
                 .tabItem {
                     Label("Setting", systemImage: "gear.circle.fill")
                 }
