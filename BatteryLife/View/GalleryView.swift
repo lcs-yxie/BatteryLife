@@ -9,37 +9,50 @@ import SwiftUI
 
 struct GalleryView: View {
     
+    @State var presentingNewItemSheet = false
+    
     var body: some View {
         
         
-                Text("Battery Life")
+        Text("Battery Life")
             .fontWeight(.heavy)
             .font(.system(size: 50))
         Text("My Devices:")
-                //Scroll Window at the bottom
-                ScrollView(.vertical, showsIndicators: false) {
-                   VStack(alignment: .center, spacing: 35) {
-                        Spacer()
-                        NavigationLink(destination: NewDeviceView()){
-                            ItemView()
-                        }
-                        ItemView()
-                        ItemView()
-                        //Adding new device
-            
-                    }
-                    .padding(.leading)
-                    .padding(.trailing)
-                    .padding(.bottom)
-                    
-                    
-                } // <2>
+        //Scroll Window at the bottom
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack(alignment: .center, spacing: 35) {
+                Spacer()
+                NavigationLink(destination: NewDeviceView()){
+                    ItemView()
+                }
+                ItemView()
+                ItemView()
+                //Adding new device
                 
-                
-                
-            .padding(.top)
+            }
+            .padding(.leading)
+            .padding(.trailing)
+            .padding(.bottom)
             
             
+        }
+        .padding(.top)
+        .sheet(isPresented: $presentingNewItemSheet) {
+            Text("Hello, world!")
+        }
+        .toolbar {
+            // Add a button to trigger showing the sheet
+            ToolbarItem(placement: .automatic) {
+                Button {
+                    presentingNewItemSheet = true
+                } label: {
+                    Image(systemName: "plus")
+                    .foregroundStyle(.white)
+                }
+            }
+        }
+        
+        
         
     }
 }
