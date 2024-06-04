@@ -25,6 +25,7 @@ struct EntryView: View {
             }
             
         }
+        .navigationBarBackButtonHidden(true)
     }
     
 }

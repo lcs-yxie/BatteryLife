@@ -11,24 +11,29 @@ import SwiftUI
 struct ItemView: View {
     var body: some View {
         
-       
-            //Symbol in the center
-            Image(systemName: "macbook")
-                .resizable()
-                .scaledToFit()
-                .foregroundColor(.black)
-                .cornerRadius(10)
-                .frame(width: 200, height: 200)
-                .padding()
-                .background {
-                    //background round square
-                    RoundedRectangle(cornerRadius: 20)
-                        .stroke(.green, lineWidth: 20)
-                        .fill(.white)
-                }
-        
+        ZStack{
+            RoundedRectangle(cornerRadius: 10)
+                .stroke(.green, lineWidth: 20)
+                .fill(.white)
+                .frame(width: 340, height: 60)
+            
+            HStack{
+                //Symbol in the center
+                
+                Image(systemName: "macbook")
+                    .font(.system(size: 50))
+                    .foregroundStyle(.black)
+                    .padding(.leading, 30)
+                    Spacer()
+                Text("My Macbook")
+                    .foregroundStyle(.black)
+                    .fontWeight(.heavy)
+                    .padding(.trailing, 100)
+            }
+        }
         
     }
+    
 }
 
 #Preview {

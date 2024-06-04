@@ -9,12 +9,24 @@ import SwiftUI
 
 struct NewDeviceView: View {
     @State private var selectedTab = "One"
+    
     var body: some View {
         
     
 
             VStack(alignment: .leading){
                 //image and name of device
+                
+                HStack{
+                    NavigationLink(destination: GalleryView()){
+                        Image(systemName: "arrow.left")
+                            .font(.system(size: 30))
+                            .foregroundStyle(.white)
+                    }
+                    Spacer()
+                    
+                }
+                
                 Text("My ")
                     .fontWeight(.heavy)
                     .font(.system(size: 80))
@@ -28,7 +40,7 @@ struct NewDeviceView: View {
                     
                     Spacer()
                 }
-                .padding(.bottom)
+               
                 .padding(.trailing)
                 
                 
@@ -46,6 +58,7 @@ struct NewDeviceView: View {
                 .padding(.leading)
                 
                 Spacer()
+                
             }
             .padding(.top)
             .padding(.leading)
@@ -73,19 +86,14 @@ struct NewDevice_Previews: PreviewProvider {
                 }
                 .tag(1)
             
-            Text("Delete")
+            Text("Data")
                 .tabItem {
-                    Label("Delete", systemImage: "trash.circle.fill")
+                    Label("Data", systemImage: "chart.bar.fill")
                 }
             
             Text("Setting")
                 .tabItem {
                     Label("Setting", systemImage: "gear.circle.fill")
-                }
-            
-            Text("Return")
-                .tabItem {
-                    Label("Return", systemImage: "arrow.left.circle.fill")
                 }
         }
         .preferredColorScheme (.dark)
@@ -93,3 +101,7 @@ struct NewDevice_Previews: PreviewProvider {
     
 }
 
+#Preview {
+    NewDeviceView()
+        .preferredColorScheme(.dark)
+}
