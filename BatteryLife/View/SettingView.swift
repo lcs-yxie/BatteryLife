@@ -9,41 +9,44 @@ import SwiftUI
 import Foundation
 
 struct SettingView: View {
-    @State private var textFieldData = ""
+    
     @State private var name = ""
-    @State private var symbol = ""
+    @State private var batteryNotice = false
+    @State private var batteryLevel = 10
     var body: some View {
-        VStack(spacing: 20) {
-            Text("Setting")
-                .font(.largeTitle)
-            Text("Title Text (Placeholder or Hint)")
-                .foregroundStyle(.gray)
-
-                TextField("Here is title text", text: $textFieldData)
-                    .textFieldStyle(.roundedBorder)
-                    .foregroundStyle(.orange)
-                TextField("Name", text: $name)
-                .textFieldStyle(.roundedBorder)
-                .foregroundStyle(.orange)
-                TextField("Symbol", text: $symbol)
-                    .textFieldStyle(.roundedBorder)
-
-            
-//            .overlay(
-//            // Add the outline
-//            RoundedRectangle(cornerRadius: 8)
-//            .stroke(Color.white, lineWidth: 2)
-//            )
-
-            .padding(.horizontal)
+        NavigationView{
+            Form{
+                Section(header: Text("Device Information")){
+                    TextField("Name", text: $name)
+                }
+                
+                Section(header: Text("Notification")){
+                    Toggle("Low Battery Notification", isOn: $batteryNotice)
+                    Stepper("Batter Percentage", value: $batteryLevel, in: 5...90)
+                    Text("Notify when battery is \(batteryLevel) or lower")
+                }
+                
+            }
+            .toolbar {
+                ToolbarItemGroup(placement: .navigationBarTrailing) {
+                    Text("Save")
+                }
+                
+            }
             
         }
-        .font(.title)
-        .foregroundColor(.white)
+        .navigationTitle("Device")
+        
+        
+        
         
     }
+    
 }
+
+        
 
 #Preview {
     SettingView()
+        .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }
