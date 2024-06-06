@@ -13,7 +13,13 @@ struct SettingView: View {
     @State private var name = ""
     @State private var batteryNotice = false
     @State private var batteryLevel = 10
+    
+    
     var body: some View {
+        
+        
+        
+        //Textfield for setting
         NavigationView{
             Form{
                 Section(header: Text("Device Information")){
@@ -24,14 +30,6 @@ struct SettingView: View {
                     Toggle("Low Battery Notification", isOn: $batteryNotice)
                     Stepper("Batter Percentage", value: $batteryLevel, in: 5...90)
                     Text("Notify when battery is \(batteryLevel) or lower")
-                }
-                
-            }
-            .toolbar {
-                ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    NavigationLink(destination: GalleryView()){
-                        Text("Save")
-                    }
                 }
                 
             }

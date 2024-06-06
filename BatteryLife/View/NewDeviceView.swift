@@ -10,7 +10,7 @@ import SwiftUI
 struct NewDeviceView: View {
     
     @State private var selectedTab = "One"
-    @State var presentingNewItemSheet = false
+   
     
     var body: some View {
         
@@ -56,21 +56,8 @@ struct NewDeviceView: View {
         .padding(.top)
         .padding(.leading)
         .font(.system(size: 40))
-        .sheet(isPresented: $presentingNewItemSheet) {
-            Text("Remove device")
-                .presentationDetents([.medium, .fraction(0.15)])
-        }
-        .toolbar {
-            // Add a button to trigger showing the sheet
-            ToolbarItem(placement: .automatic) {
-                Button {
-                    presentingNewItemSheet = true
-                } label: {
-                    Image(systemName: "trash.fill")
-                    .foregroundStyle(.white)
-                }
-            }
-        }
+        
+        
         
         
         
