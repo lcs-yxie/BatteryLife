@@ -22,7 +22,7 @@ struct GalleryView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack(alignment: .center, spacing: 35) {
                 Spacer()
-                NavigationLink(destination: NewDeviceView()){
+                NavigationLink(destination: LandingView()){
                     ItemView()
                 }
                 ItemView()

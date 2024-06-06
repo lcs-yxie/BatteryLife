@@ -29,7 +29,9 @@ struct SettingView: View {
             }
             .toolbar {
                 ToolbarItemGroup(placement: .navigationBarTrailing) {
-                    Text("Save")
+                    NavigationLink(destination: GalleryView()){
+                        Text("Save")
+                    }
                 }
                 
             }

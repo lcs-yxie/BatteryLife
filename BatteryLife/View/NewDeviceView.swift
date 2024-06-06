@@ -9,8 +9,6 @@ import SwiftUI
 
 struct NewDeviceView: View {
     
-    
-    
     @State private var selectedTab = "One"
     @State var presentingNewItemSheet = false
     
@@ -83,29 +81,8 @@ struct NewDeviceView: View {
 }
 
 
-struct NewDeviceView_Previews: PreviewProvider {
-    static var previews: some View {
-        TabView(selection: Binding.constant(1)){
-            
-            NewDeviceView()
-                .tabItem {
-                    Label("Home", systemImage: "house.circle.fill")
-                }
-                .tag(1)
-            
-            Text("Data")
-                .tabItem {
-                    Label("Data", systemImage: "chart.bar.fill")
-                }
-            
-            SettingView()
-                .tabItem {
-                    Label("Setting", systemImage: "gear.circle.fill")
-                }
-        }
-        .preferredColorScheme (.dark)
-    }
-    
+#Preview {
+    LandingView()
 }
 
 
