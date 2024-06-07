@@ -36,7 +36,9 @@ struct SettingView: View {
             
         }
         .navigationTitle("Device")
-        
+        .onTapGesture {
+            hideKeyboard()
+        }
         
         
         
@@ -50,3 +52,11 @@ struct SettingView: View {
     SettingView()
         .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
 }
+
+#if canImport(UIKit)
+extension View {
+func hideKeyboard() {
+    UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                                    }
+}
+#endif

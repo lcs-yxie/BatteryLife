@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct NewDeviceView: View {
     
     @State private var selectedTab = "One"
+    var isBatteryMonitoringEnabled: Bool
+    var batteryState: UIDevice.BatteryState
+    enum UIDevice.BatteryState
    
     
     var body: some View {
@@ -20,7 +24,7 @@ struct NewDeviceView: View {
             //image and name of device
             
             
-            Text("My ")
+            Text("My")
                 .fontWeight(.heavy)
                 .font(.system(size: 80))
             Text("Airpods")
@@ -43,7 +47,7 @@ struct NewDeviceView: View {
                     .font(.system(size: 280))
                 
                 //battery percentage
-                Text("78%")
+                Text("\(Int(batteryLevel * 100))%")
                     .fontWeight(.heavy)
                     .font(.system(size: 70))
             }
@@ -63,6 +67,10 @@ struct NewDeviceView: View {
         
         
         
+    }
+    private func updateBatteryLevel() {
+        // UIDevice's batteryLevel returns a value between 0.0 (empty) and 1.0 (full)
+        self.batteryLevel = UIDevice.current.batteryLevel
     }
     
 }
