@@ -10,6 +10,8 @@ import Foundation
 import SwiftUI
 
 struct ItemView: View {
+    
+    let deviceTitle: String
     var body: some View {
         
         ZStack{
@@ -26,7 +28,7 @@ struct ItemView: View {
                     .foregroundStyle(.black)
                     .padding(.leading, 30)
                     Spacer()
-                Text("My Macbook")
+                Text(deviceTitle)
                     .foregroundStyle(.black)
                     .fontWeight(.heavy)
                     .padding(.trailing, 100)
@@ -38,6 +40,6 @@ struct ItemView: View {
 }
 
 #Preview {
-    ItemView()
+    ItemView(deviceTitle: "Macbook")
         .preferredColorScheme(.dark)
 }
