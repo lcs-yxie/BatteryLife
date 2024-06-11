@@ -4,6 +4,7 @@
 //
 //  Created by Yukun Xie on 2024/5/29.
 //
+//Supa base passcode: 5F1zDK7miFRsp8Gp
 
 import SwiftUI
 
@@ -39,6 +40,8 @@ struct GalleryView: View {
         .padding(.top)
         .sheet(isPresented: $presentingNewItemSheet) {
             Text("Add Device")
+            
+            
         }
         .toolbar {
             // Add a button to trigger showing the sheet

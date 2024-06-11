@@ -5,6 +5,8 @@
 //  Created by Yukun Xie on 2024/5/29.
 //
 
+
+//Supa base passcode: 5F1zDK7miFRsp8Gp
 import SwiftUI
 
 struct EntryView: View {

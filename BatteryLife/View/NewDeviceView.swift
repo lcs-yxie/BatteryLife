@@ -5,26 +5,19 @@
 //  Created by Yukun Xie on 2024/5/30.
 //
 
+//Supa base passcode: 5F1zDK7miFRsp8Gp
 import SwiftUI
 import UIKit
 
 struct NewDeviceView: View {
     
-    @State private var selectedTab = "One"
-    var isBatteryMonitoringEnabled: Bool
-    var batteryState: UIDevice.BatteryState
-    enum UIDevice.BatteryState
-   
+    @State private var batteryLevel: Float = UIDevice.current.batteryLevel
     
     var body: some View {
         
-        
-        
         VStack(alignment: .leading){
-            //image and name of device
-            
-            
-            Text("My")
+            // Image and name of the device
+            Text("My ")
                 .fontWeight(.heavy)
                 .font(.system(size: 80))
             Text("Airpods")
@@ -34,19 +27,16 @@ struct NewDeviceView: View {
                 Image(systemName: "airpods")
                     .font(.system(size: 80))
                 
-                
                 Spacer()
             }
-            
             .padding(.trailing)
             
-            
-            ZStack{
-                //battery cricle
+            ZStack {
+                // Battery circle
                 Image(systemName: "circle")
                     .font(.system(size: 280))
                 
-                //battery percentage
+                // Battery percentage
                 Text("\(Int(batteryLevel * 100))%")
                     .fontWeight(.heavy)
                     .font(.system(size: 70))
@@ -55,31 +45,25 @@ struct NewDeviceView: View {
             .padding(.leading)
             
             Spacer()
-            
         }
         .padding(.top)
         .padding(.leading)
         .font(.system(size: 40))
-        
-        
-        
-        
-        
-        
-        
+        .onAppear {
+            UIDevice.current.isBatteryMonitoringEnabled = true
+            updateBatteryLevel()
+        }
+        .onDisappear {
+            UIDevice.current.isBatteryMonitoringEnabled = false
+        }
     }
+    
     private func updateBatteryLevel() {
         // UIDevice's batteryLevel returns a value between 0.0 (empty) and 1.0 (full)
         self.batteryLevel = UIDevice.current.batteryLevel
     }
-    
 }
-
 
 #Preview {
     LandingView()
 }
-
-
-
-

@@ -10,18 +10,27 @@
 		641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A35982C08D15400DA8F6B /* NewDeviceView.swift */; };
 		643B52F22C120AA0003261B3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B52F12C120AA0003261B3 /* LandingView.swift */; };
 		6472C9532C0F51F100D6268A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472C9522C0F51F100D6268A /* SettingView.swift */; };
+		649D55D62C138DFC0067B375 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D55D52C138DFC0067B375 /* Device.swift */; };
 		64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */; };
 		64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D2A2C07697700CDBC8C /* GalleryView.swift */; };
 		64CE2D2D2C07697800CDBC8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2C2C07697800CDBC8C /* Assets.xcassets */; };
 		64CE2D302C07697800CDBC8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */; };
 		64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D362C0769AD00CDBC8C /* EntryView.swift */; };
 		64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D392C07719800CDBC8C /* ItemView.swift */; };
+		64E5F31D2C17C9A900C535FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F31C2C17C9A900C535FB /* ViewModel.swift */; };
+		64E5F3202C17CE8B00C535FB /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F31F2C17CE8B00C535FB /* Auth */; };
+		64E5F3222C17CE8B00C535FB /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3212C17CE8B00C535FB /* Functions */; };
+		64E5F3242C17CE8B00C535FB /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3232C17CE8B00C535FB /* PostgREST */; };
+		64E5F3262C17CE8B00C535FB /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3252C17CE8B00C535FB /* Realtime */; };
+		64E5F3282C17CE8B00C535FB /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3272C17CE8B00C535FB /* Storage */; };
+		64E5F32A2C17CE8B00C535FB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3292C17CE8B00C535FB /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		641A35982C08D15400DA8F6B /* NewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceView.swift; sourceTree = "<group>"; };
 		643B52F12C120AA0003261B3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		6472C9522C0F51F100D6268A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		649D55D52C138DFC0067B375 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		64CE2D252C07697700CDBC8C /* BatteryLife.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryLife.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryLifeApp.swift; sourceTree = "<group>"; };
 		64CE2D2A2C07697700CDBC8C /* GalleryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryView.swift; sourceTree = "<group>"; };
@@ -29,6 +38,7 @@
 		64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64CE2D362C0769AD00CDBC8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		64CE2D392C07719800CDBC8C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		64E5F31C2C17C9A900C535FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,15 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E5F3242C17CE8B00C535FB /* PostgREST in Frameworks */,
+				64E5F3222C17CE8B00C535FB /* Functions in Frameworks */,
+				64E5F32A2C17CE8B00C535FB /* Supabase in Frameworks */,
+				64E5F3202C17CE8B00C535FB /* Auth in Frameworks */,
+				64E5F3282C17CE8B00C535FB /* Storage in Frameworks */,
+				64E5F3262C17CE8B00C535FB /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		649D55D72C138E010067B375 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				649D55D52C138DFC0067B375 /* Device.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		64CE2D1C2C07697700CDBC8C = {
 			isa = PBXGroup;
 			children = (
+				64E5F31C2C17C9A900C535FB /* ViewModel.swift */,
 				64CE2D272C07697700CDBC8C /* BatteryLife */,
 				64CE2D262C07697700CDBC8C /* Products */,
 			);
@@ -63,7 +88,7 @@
 			children = (
 				64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */,
 				64CE2D382C0769B600CDBC8C /* View */,
-				64CE2D2C2C07697800CDBC8C /* Assets.xcassets */,
+				649D55D72C138E010067B375 /* Model */,
 				64CE2D2E2C07697800CDBC8C /* Preview Content */,
 			);
 			path = BatteryLife;
@@ -72,6 +97,7 @@
 		64CE2D2E2C07697800CDBC8C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
+				64CE2D2C2C07697800CDBC8C /* Assets.xcassets */,
 				64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -106,6 +132,14 @@
 			dependencies = (
 			);
 			name = BatteryLife;
+			packageProductDependencies = (
+				64E5F31F2C17CE8B00C535FB /* Auth */,
+				64E5F3212C17CE8B00C535FB /* Functions */,
+				64E5F3232C17CE8B00C535FB /* PostgREST */,
+				64E5F3252C17CE8B00C535FB /* Realtime */,
+				64E5F3272C17CE8B00C535FB /* Storage */,
+				64E5F3292C17CE8B00C535FB /* Supabase */,
+			);
 			productName = BatteryLife;
 			productReference = 64CE2D252C07697700CDBC8C /* BatteryLife.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 64CE2D1C2C07697700CDBC8C;
+			packageReferences = (
+				64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 64CE2D262C07697700CDBC8C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -160,6 +197,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649D55D62C138DFC0067B375 /* Device.swift in Sources */,
+				64E5F31D2C17C9A900C535FB /* ViewModel.swift in Sources */,
 				64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */,
 				64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */,
 				643B52F22C120AA0003261B3 /* LandingView.swift in Sources */,
@@ -372,6 +411,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		64E5F31F2C17CE8B00C535FB /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		64E5F3212C17CE8B00C535FB /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		64E5F3232C17CE8B00C535FB /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		64E5F3252C17CE8B00C535FB /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		64E5F3272C17CE8B00C535FB /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		64E5F3292C17CE8B00C535FB /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 64E5F31E2C17CE8B00C535FB /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 64CE2D1D2C07697700CDBC8C /* Project object */;
 }
