@@ -20,7 +20,7 @@ struct AddDeviceView: View {
             Form{
                 Section(header: Text("Device Information")){
                     TextField("Name", text: $name)
-                    TextField("Device Modely", text: $type)
+                    TextField("Device Model", text: $type)
 //                    Picker("Model", selection: $type){
 //                        Text("Iphone").tag("Iphone")
 //                        Text("Ipad").tag("Ipad")

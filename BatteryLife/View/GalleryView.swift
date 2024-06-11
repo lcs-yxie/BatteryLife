@@ -11,7 +11,7 @@ import SwiftUI
 struct GalleryView: View {
     
     @State var presentingNewItemSheet = false
-    @State var devices: [Device] = exampleDevices
+    @State var devices: [Device] = []
     
     var body: some View {
         VStack {
@@ -23,14 +23,17 @@ struct GalleryView: View {
             ScrollView(.vertical, showsIndicators: false) {
                 VStack(alignment: .center, spacing: 35) {
                     Spacer()
-                    NavigationLink(destination: LandingView()) {
-                        ItemView(deviceTitle: "Macbook")
-                    }
-                    ItemView(deviceTitle: "Iphone")
-                    ItemView(deviceTitle: "Airpods")
+                    
                     // Adding new device
                     ForEach(devices) { device in
-                        ItemView(deviceTitle: device.name)
+                       
+                        let _ = print("Device name is: \(device.name)")
+                        
+                        NavigationLink {
+                            LandingView()
+                        } label: {
+                            ItemView(deviceTitle: device.name)
+                        }
                     }
                 }
                 .padding(.leading)
