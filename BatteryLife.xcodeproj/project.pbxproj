@@ -24,6 +24,7 @@
 		64E5F3262C17CE8B00C535FB /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3252C17CE8B00C535FB /* Realtime */; };
 		64E5F3282C17CE8B00C535FB /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3272C17CE8B00C535FB /* Storage */; };
 		64E5F32A2C17CE8B00C535FB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3292C17CE8B00C535FB /* Supabase */; };
+		64E5F32C2C17CF2500C535FB /* SupaBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F32B2C17CF2500C535FB /* SupaBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		64CE2D362C0769AD00CDBC8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		64CE2D392C07719800CDBC8C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 		64E5F31C2C17C9A900C535FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		64E5F32B2C17CF2500C535FB /* SupaBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		64CE2D1C2C07697700CDBC8C = {
 			isa = PBXGroup;
 			children = (
+				64E5F32B2C17CF2500C535FB /* SupaBase.swift */,
 				64E5F31C2C17C9A900C535FB /* ViewModel.swift */,
 				64CE2D272C07697700CDBC8C /* BatteryLife */,
 				64CE2D262C07697700CDBC8C /* Products */,
@@ -204,6 +207,7 @@
 				643B52F22C120AA0003261B3 /* LandingView.swift in Sources */,
 				64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */,
 				6472C9532C0F51F100D6268A /* SettingView.swift in Sources */,
+				64E5F32C2C17CF2500C535FB /* SupaBase.swift in Sources */,
 				641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */,
 				64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */,
 			);
