@@ -39,9 +39,7 @@ struct GalleryView: View {
         }
         .padding(.top)
         .sheet(isPresented: $presentingNewItemSheet) {
-            Text("Add Device")
-            
-            
+            AddDeviceView(dismissSheet: $presentingNewItemSheet)
         }
         .toolbar {
             // Add a button to trigger showing the sheet
