@@ -18,21 +18,14 @@ struct ItemView: View {
             RoundedRectangle(cornerRadius: 10)
                 .stroke(.green, lineWidth: 20)
                 .fill(.white)
-                .frame(width: 340, height: 60)
+                .frame(width: 240, height: 60)
             
-            HStack{
-                //Symbol in the center
-                
-                Image(systemName: "macbook")
-                    .font(.system(size: 50))
-                    .foregroundStyle(.black)
-                    .padding(.leading, 30)
-                    Spacer()
+
                 Text(deviceTitle)
                     .foregroundStyle(.black)
                     .fontWeight(.heavy)
                     .padding(.trailing, 100)
-            }
+            
         }
         
     }

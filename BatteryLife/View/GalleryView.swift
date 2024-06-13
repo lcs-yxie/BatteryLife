@@ -33,7 +33,7 @@ struct GalleryView: View {
                                 Image(systemName: "trash.circle.fill")
                                     .foregroundColor(.white)
                                     .padding(.leading)
-                                    .font(.system(size: 20))
+                                    .font(.system(size: 50))
                             }
                         }
                         .padding()
