@@ -11,21 +11,14 @@ import Foundation
 
 struct SettingView: View {
     
-    @State private var nameSetting = ""
     @State private var batteryNotice = false
     @State private var batteryLevel = 10
-    
 
     var body: some View {
-        
-        
         
         //Textfield for setting
         NavigationView{
             Form{
-                Section(header: Text("Device Information")){
-                    TextField("Name", text: $nameSetting)
-                }
                 
                 Section(header: Text("Notification")){
                     Toggle("Low Battery Notification", isOn: $batteryNotice)
