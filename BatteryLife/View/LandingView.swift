@@ -1,3 +1,4 @@
+
 import SwiftUI
 
 struct LandingView: View {
@@ -58,6 +59,7 @@ struct LandingView: View {
                 Image(systemName: "checkmark.circle.fill")
                     .font(.system(size: 150))
                     .foregroundStyle(.green)
+                
             }
                 .presentationDetents([.medium, .fraction(0.45)])
         }

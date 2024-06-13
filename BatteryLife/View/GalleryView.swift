@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  BatteryLife
-//
-//  Created by Yukun Xie on 2024/5/29.
-//
-//Supa base passcode: 5F1zDK7miFRsp8Gp
 
 import SwiftUI
 
@@ -24,15 +17,26 @@ struct GalleryView: View {
                     Spacer()
                     
                     // Adding new device
-                    ForEach(devices) { currentDevice in
-                       
-                        let _ = print("Device name is: \(currentDevice.name)")
+                    ForEach(devices.indices, id: \.self) { index in
+                        let currentDevice = devices[index]
                         
-                        NavigationLink {
-                            LandingView(device: currentDevice)
-                        } label: {
-                            ItemView(deviceTitle: currentDevice.name)
+                        HStack {
+                            NavigationLink {
+                                LandingView(device: currentDevice)
+                            } label: {
+                                ItemView(deviceTitle: currentDevice.name)
+                            }
+                            Spacer()
+                            Button(action: {
+                                deleteItem(at: index)
+                            }) {
+                                Image(systemName: "trash.circle.fill")
+                                    .foregroundColor(.white)
+                                    .padding(.leading)
+                                    .font(.system(size: 20))
+                            }
                         }
+                        .padding()
                     }
                 }
                 .padding(.leading)
@@ -56,6 +60,10 @@ struct GalleryView: View {
             }
             .navigationBarBackButtonHidden(true)
         }
+    }
+    
+    func deleteItem(at index: Int) {
+        devices.remove(at: index)
     }
 }
 
