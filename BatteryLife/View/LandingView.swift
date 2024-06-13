@@ -5,11 +5,11 @@ struct LandingView: View {
     @State var presentingNewItemSheet = false
     @State private var selectedTab = 1
     @State var presentingComplete = false
-    
+    @Binding var name: String
     var body: some View {
         TabView(selection: $selectedTab){
             
-            NewDeviceView()
+            NewDeviceView(name: $name)
                 .tabItem {
                     Label("Home", systemImage: "house.circle.fill")
                 }
@@ -65,5 +65,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView()
+    LandingView(name: Binding.constant(""))
 }

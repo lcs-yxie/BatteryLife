@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct GalleryView: View {
-    
     @State var presentingNewItemSheet = false
     @State var devices: [Device] = []
     
@@ -30,7 +29,7 @@ struct GalleryView: View {
                         let _ = print("Device name is: \(device.name)")
                         
                         NavigationLink {
-                            LandingView()
+                            LandingView(name: Binding.constant(""))
                         } label: {
                             ItemView(deviceTitle: device.name)
                         }

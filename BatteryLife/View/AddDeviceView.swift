@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Foundation
 
 struct AddDeviceView: View {
     
@@ -14,6 +15,8 @@ struct AddDeviceView: View {
     @State private var batteryLevel: Float = 0.5
     @Binding var dismissSheet: Bool
     @Binding var device: [Device]
+    
+    
     
     var body: some View {
         NavigationStack{
@@ -53,8 +56,9 @@ struct AddDeviceView: View {
 }
 
 #Preview {
+
     AddDeviceView(
         dismissSheet: Binding.constant(true),
-        device: Binding.constant(exampleDevices))
-        .preferredColorScheme(.dark)
+        device: Binding.constant(exampleDevices)
+        )
 }

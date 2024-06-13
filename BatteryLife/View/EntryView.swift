@@ -10,6 +10,8 @@
 import SwiftUI
 
 struct EntryView: View {
+
+    @State private var name: String = ""
     var body: some View {
         NavigationStack{
             //Creating a button
@@ -32,7 +34,3 @@ struct EntryView: View {
     
 }
 
-#Preview {
-    EntryView()
-        .preferredColorScheme(.dark)
-}

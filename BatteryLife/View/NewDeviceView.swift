@@ -12,15 +12,13 @@ import UIKit
 struct NewDeviceView: View {
     
     @State private var batteryLevel: Float = UIDevice.current.batteryLevel
+    @Binding var name: String
     
     var body: some View {
         
         VStack(alignment: .leading){
             // Image and name of the device
-            Text("My ")
-                .fontWeight(.heavy)
-                .font(.system(size: 80))
-            Text("Airpods")
+            Text("\(name)")
                 .fontWeight(.heavy)
                 .font(.system(size: 80))
             HStack{
@@ -64,6 +62,3 @@ struct NewDeviceView: View {
     }
 }
 
-#Preview {
-    LandingView()
-}
