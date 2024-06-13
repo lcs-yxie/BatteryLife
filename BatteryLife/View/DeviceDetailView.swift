@@ -9,16 +9,18 @@
 import SwiftUI
 import UIKit
 
-struct NewDeviceView: View {
+struct DeviceDetailView: View {
     
     @State private var batteryLevel: Float = UIDevice.current.batteryLevel
-    @Binding var name: String
+    
+    let device: Device
+//    @Binding var name: String
     
     var body: some View {
         
         VStack(alignment: .leading){
             // Image and name of the device
-            Text("\(name)")
+            Text("\(device.name)")
                 .fontWeight(.heavy)
                 .font(.system(size: 80))
             HStack{

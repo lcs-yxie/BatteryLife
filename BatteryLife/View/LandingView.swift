@@ -2,14 +2,14 @@ import SwiftUI
 
 struct LandingView: View {
     
-    @State var presentingNewItemSheet = false
+    @State private var presentingNewItemSheet = false
     @State private var selectedTab = 1
-    @State var presentingComplete = false
-    @Binding var name: String
+    @State private var presentingComplete = false
+    let device: Device
     var body: some View {
         TabView(selection: $selectedTab){
             
-            NewDeviceView(name: $name)
+            DeviceDetailView(device: device)
                 .tabItem {
                     Label("Home", systemImage: "house.circle.fill")
                 }
@@ -65,5 +65,5 @@ struct LandingView: View {
 }
 
 #Preview {
-    LandingView(name: Binding.constant(""))
+    LandingView(device: exampleDevices.first!)
 }

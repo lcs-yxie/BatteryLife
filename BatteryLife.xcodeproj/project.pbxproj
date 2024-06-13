@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A35982C08D15400DA8F6B /* NewDeviceView.swift */; };
+		641A35992C08D15400DA8F6B /* DeviceDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 641A35982C08D15400DA8F6B /* DeviceDetailView.swift */; };
 		643B52F22C120AA0003261B3 /* LandingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 643B52F12C120AA0003261B3 /* LandingView.swift */; };
 		6472C9532C0F51F100D6268A /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6472C9522C0F51F100D6268A /* SettingView.swift */; };
 		649D55D62C138DFC0067B375 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 649D55D52C138DFC0067B375 /* Device.swift */; };
@@ -29,7 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		641A35982C08D15400DA8F6B /* NewDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDeviceView.swift; sourceTree = "<group>"; };
+		641A35982C08D15400DA8F6B /* DeviceDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceDetailView.swift; sourceTree = "<group>"; };
 		643B52F12C120AA0003261B3 /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
 		6472C9522C0F51F100D6268A /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		649D55D52C138DFC0067B375 /* Device.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				64CE2D2A2C07697700CDBC8C /* GalleryView.swift */,
-				641A35982C08D15400DA8F6B /* NewDeviceView.swift */,
+				641A35982C08D15400DA8F6B /* DeviceDetailView.swift */,
 				64CE2D392C07719800CDBC8C /* ItemView.swift */,
 				6472C9522C0F51F100D6268A /* SettingView.swift */,
 				64CE2D362C0769AD00CDBC8C /* EntryView.swift */,
@@ -228,7 +228,7 @@
 				64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */,
 				6472C9532C0F51F100D6268A /* SettingView.swift in Sources */,
 				64E5F32C2C17CF2500C535FB /* SupaBase.swift in Sources */,
-				641A35992C08D15400DA8F6B /* NewDeviceView.swift in Sources */,
+				641A35992C08D15400DA8F6B /* DeviceDetailView.swift in Sources */,
 				64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

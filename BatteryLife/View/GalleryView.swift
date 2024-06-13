@@ -24,14 +24,14 @@ struct GalleryView: View {
                     Spacer()
                     
                     // Adding new device
-                    ForEach(devices) { device in
+                    ForEach(devices) { currentDevice in
                        
-                        let _ = print("Device name is: \(device.name)")
+                        let _ = print("Device name is: \(currentDevice.name)")
                         
                         NavigationLink {
-                            LandingView(name: Binding.constant(""))
+                            LandingView(device: currentDevice)
                         } label: {
-                            ItemView(deviceTitle: device.name)
+                            ItemView(deviceTitle: currentDevice.name)
                         }
                     }
                 }
