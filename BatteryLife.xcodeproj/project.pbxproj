@@ -26,6 +26,7 @@
 		64E5F32A2C17CE8B00C535FB /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3292C17CE8B00C535FB /* Supabase */; };
 		64E5F32C2C17CF2500C535FB /* SupaBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F32B2C17CF2500C535FB /* SupaBase.swift */; };
 		64E5F3302C17D8EA00C535FB /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F32F2C17D8EA00C535FB /* AddDeviceView.swift */; };
+		64F3ADA12C1C925F00BBBDB8 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		64E5F31C2C17C9A900C535FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		64E5F32B2C17CF2500C535FB /* SupaBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBase.swift; sourceTree = "<group>"; };
 		64E5F32F2C17D8EA00C535FB /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
+		64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				64E5F32E2C17CFA400C535FB /* Helpers */,
 				64E5F32D2C17CF9200C535FB /* ViewModel */,
 				64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */,
+				64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */,
 				64CE2D382C0769B600CDBC8C /* View */,
 				649D55D72C138E010067B375 /* Model */,
 				64CE2D2E2C07697800CDBC8C /* Preview Content */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64F3ADA12C1C925F00BBBDB8 /* DeviceViewModel.swift in Sources */,
 				649D55D62C138DFC0067B375 /* Device.swift in Sources */,
 				64E5F3302C17D8EA00C535FB /* AddDeviceView.swift in Sources */,
 				64E5F31D2C17C9A900C535FB /* ViewModel.swift in Sources */,
