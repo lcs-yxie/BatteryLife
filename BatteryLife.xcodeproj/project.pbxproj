@@ -73,6 +73,7 @@
 			children = (
 				649D55D52C138DFC0067B375 /* Device.swift */,
 				64F3ADA42C1C953F00BBBDB8 /* Person.swift */,
+				64F3ADA22C1C949B00BBBDB8 /* Device+person.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -96,11 +97,9 @@
 		64CE2D272C07697700CDBC8C /* BatteryLife */ = {
 			isa = PBXGroup;
 			children = (
+				64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */,
 				64E5F32E2C17CFA400C535FB /* Helpers */,
 				64E5F32D2C17CF9200C535FB /* ViewModel */,
-				64CE2D282C07697700CDBC8C /* BatteryLifeApp.swift */,
-				64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */,
-				64F3ADA22C1C949B00BBBDB8 /* Device+person.swift */,
 				64CE2D382C0769B600CDBC8C /* View */,
 				649D55D72C138E010067B375 /* Model */,
 				64CE2D2E2C07697800CDBC8C /* Preview Content */,
@@ -134,6 +133,7 @@
 		64E5F32D2C17CF9200C535FB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */,
 				64E5F31C2C17C9A900C535FB /* ViewModel.swift */,
 			);
 			path = ViewModel;
