@@ -35,12 +35,11 @@ class DeviceViewModel: Observable {
     func addDevices(device: Device) async throws {
         do{
             
-            let results: [Device] = try await supabase
+            let _: [Device] = try await supabase
                 .from("devices")
                 .insert(device)
                 .execute()
                 .value
-            self.devices = results
             
         }catch{
             print("Error")

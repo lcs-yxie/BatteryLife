@@ -15,6 +15,7 @@ struct AddDeviceView: View {
     @State private var batteryLevel: Float = 0.5
     @Binding var dismissSheet: Bool
     @Binding var device: [Device]
+    @Environment(DeviceViewModel.self) var viewModel
     
     
     
@@ -41,8 +42,8 @@ struct AddDeviceView: View {
                 ToolbarItem(placement: .primaryAction){
                     Button {
                         // Add the new device
-                        let newDevice = Device(name: name, batteryLevels: batteryLevel)
-                        addDevices(newDevice)
+                        _ = Device(name: name, batteryLevels: batteryLevel)
+                        //viewModel.addDevice(newDevice)
                         
                         // Dismiss sheet
                         dismissSheet = false
