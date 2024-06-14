@@ -42,7 +42,7 @@ struct AddDeviceView: View {
                     Button {
                         // Add the new device
                         let newDevice = Device(name: name, batteryLevels: batteryLevel)
-                        device.append(newDevice)
+                        addDevices(newDevice)
                         
                         // Dismiss sheet
                         dismissSheet = false
@@ -55,10 +55,10 @@ struct AddDeviceView: View {
     }
 }
 
-#Preview {
+/*#Preview {
 
     AddDeviceView(
         dismissSheet: Binding.constant(true),
         device: Binding.constant(exampleDevices)
         )
-}
+}*/

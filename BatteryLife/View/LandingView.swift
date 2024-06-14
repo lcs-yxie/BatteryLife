@@ -66,6 +66,6 @@ struct LandingView: View {
     }
 }
 
-#Preview {
+/*#Preview {
     LandingView(device: exampleDevices.first!)
-}
+}*/

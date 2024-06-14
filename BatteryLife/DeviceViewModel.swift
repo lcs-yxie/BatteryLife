@@ -25,9 +25,25 @@ class DeviceViewModel: Observable {
                 .execute()
                 .value
             self.devices = results
+            print(results[0].name)
             
         } catch {
             debugPrint(error)
+        }
+    }
+    
+    func addDevices(device: Device) async throws {
+        do{
+            
+            let results: [Device] = try await supabase
+                .from("devices")
+                .insert(device)
+                .execute()
+                .value
+            self.devices = results
+            
+        }catch{
+            print("Error")
         }
     }
 }
