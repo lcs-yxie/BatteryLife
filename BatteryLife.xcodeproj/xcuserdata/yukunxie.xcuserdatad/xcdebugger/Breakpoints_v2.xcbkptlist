@@ -7,16 +7,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "304AEEAB-4C3E-4FF7-AB91-09774B5FAAA2"
+            uuid = "761D40C4-BB53-486A-8588-7B243B0486C5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BatteryLife/View/AddDeviceView.swift"
+            filePath = "BatteryLife/Model/Device+person.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
-            landmarkName = "AddDeviceView"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "PersonDevice"
             landmarkType = "14">
          </BreakpointContent>
       </BreakpointProxy>

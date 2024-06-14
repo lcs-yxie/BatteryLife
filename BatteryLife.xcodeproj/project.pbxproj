@@ -17,7 +17,6 @@
 		64CE2D302C07697800CDBC8C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */; };
 		64CE2D372C0769AD00CDBC8C /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D362C0769AD00CDBC8C /* EntryView.swift */; };
 		64CE2D3A2C07719800CDBC8C /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64CE2D392C07719800CDBC8C /* ItemView.swift */; };
-		64E5F31D2C17C9A900C535FB /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F31C2C17C9A900C535FB /* ViewModel.swift */; };
 		64E5F3202C17CE8B00C535FB /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F31F2C17CE8B00C535FB /* Auth */; };
 		64E5F3222C17CE8B00C535FB /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3212C17CE8B00C535FB /* Functions */; };
 		64E5F3242C17CE8B00C535FB /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 64E5F3232C17CE8B00C535FB /* PostgREST */; };
@@ -28,7 +27,6 @@
 		64E5F3302C17D8EA00C535FB /* AddDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E5F32F2C17D8EA00C535FB /* AddDeviceView.swift */; };
 		64F3ADA12C1C925F00BBBDB8 /* DeviceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */; };
 		64F3ADA32C1C949B00BBBDB8 /* Device+person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3ADA22C1C949B00BBBDB8 /* Device+person.swift */; };
-		64F3ADA52C1C953F00BBBDB8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F3ADA42C1C953F00BBBDB8 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,12 +41,10 @@
 		64CE2D2F2C07697800CDBC8C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		64CE2D362C0769AD00CDBC8C /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 		64CE2D392C07719800CDBC8C /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
-		64E5F31C2C17C9A900C535FB /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		64E5F32B2C17CF2500C535FB /* SupaBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupaBase.swift; sourceTree = "<group>"; };
 		64E5F32F2C17D8EA00C535FB /* AddDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeviceView.swift; sourceTree = "<group>"; };
 		64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceViewModel.swift; sourceTree = "<group>"; };
 		64F3ADA22C1C949B00BBBDB8 /* Device+person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Device+person.swift"; sourceTree = "<group>"; };
-		64F3ADA42C1C953F00BBBDB8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +68,6 @@
 			isa = PBXGroup;
 			children = (
 				649D55D52C138DFC0067B375 /* Device.swift */,
-				64F3ADA42C1C953F00BBBDB8 /* Person.swift */,
 				64F3ADA22C1C949B00BBBDB8 /* Device+person.swift */,
 			);
 			path = Model;
@@ -134,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				64F3ADA02C1C925F00BBBDB8 /* DeviceViewModel.swift */,
-				64E5F31C2C17C9A900C535FB /* ViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -231,8 +225,6 @@
 				64F3ADA12C1C925F00BBBDB8 /* DeviceViewModel.swift in Sources */,
 				649D55D62C138DFC0067B375 /* Device.swift in Sources */,
 				64E5F3302C17D8EA00C535FB /* AddDeviceView.swift in Sources */,
-				64E5F31D2C17C9A900C535FB /* ViewModel.swift in Sources */,
-				64F3ADA52C1C953F00BBBDB8 /* Person.swift in Sources */,
 				64CE2D2B2C07697700CDBC8C /* GalleryView.swift in Sources */,
 				64CE2D292C07697700CDBC8C /* BatteryLifeApp.swift in Sources */,
 				64F3ADA32C1C949B00BBBDB8 /* Device+person.swift in Sources */,

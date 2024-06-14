@@ -24,13 +24,14 @@ struct DeviceDetailView: View {
                 .fontWeight(.heavy)
                 .font(.system(size: 80))
             HStack{
-                Image(systemName: "airpods")
+                Image(systemName: "battery.100percent")
                     .font(.system(size: 80))
                 
                 Spacer()
             }
             .padding(.trailing)
             
+            Spacer()
             ZStack {
                 // Battery circle
                 Image(systemName: "circle")

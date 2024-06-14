@@ -1,48 +1,73 @@
-//
-//  DeviceViewModel.swift
-//  BatteryLife
-//
-//  Created by Yukun Xie on 2024/6/14.
-//
-
+////
+////  DeviceViewModel.swift
+////  BatteryLife
+////
+////  Created by Yukun Xie on 2024/6/14.
+////
+///
+///
+///
+///
 import Foundation
+import SwiftUI
 
 @Observable
-class DeviceViewModel: Observable {
-    var devices: [Device] = []
-    
-    init(){
-        Task{
-            try await getdevices()
+class DeviceViewModel: ObservableObject {
+var devices: [Device] = []
+var PersonWithDevices: [PersonDevice] = []
+
+    init() {
+        Task {
+            try await getDevices()
+        }
+        Task {
+            try await getPersonWithDevices()
         }
     }
-    
-    func getdevices() async throws{
-        do{
-            let results: [Device] = try await supabase
-                .from("devices")
-                .select()
+
+    func getPersonWithDevices() async throws {
+        do {
+            let results: [PersonDevice] = try await supabase
+                .from("person")
+                .select("id, firstName, lastName, email, devices(id, name, batteryLevels)")
                 .execute()
                 .value
-            self.devices = results
-            print(results[0].name)
-            
+
+            self.PersonWithDevices = results
         } catch {
             debugPrint(error)
         }
     }
-    
-    func addDevices(device: Device) async throws {
-        do{
-            
-            let _: [Device] = try await supabase
-                .from("devices")
-                .insert(device)
+
+    func getDevices() async throws {
+        do {
+            let results: [Device] = try await supabase
+                .from("device")
+                .select()
                 .execute()
                 .value
-            
-        }catch{
-            print("Error")
+
+            self.devices = results
+        } catch {
+            debugPrint(error)
+        }
+    }
+
+    func add(device: String, batteryLevel: Float) {
+        Task {
+            // Make a new device instance
+            let newDevice = Device(name: device, batteryLevels: batteryLevel)
+            do {
+                // Add the new device
+                try await supabase
+                    .from("device")
+                    .insert(newDevice)
+                    .execute()
+                // Refresh the list of devices
+                try await self.getDevices()
+            } catch {
+                debugPrint(error)
+            }
         }
     }
 }

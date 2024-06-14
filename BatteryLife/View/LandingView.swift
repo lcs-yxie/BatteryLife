@@ -61,11 +61,7 @@ struct LandingView: View {
                     .foregroundStyle(.green)
                 
             }
-                .presentationDetents([.medium, .fraction(0.45)])
+            .presentationDetents([.medium, .fraction(0.45)])
         }
     }
 }
-
-/*#Preview {
-    LandingView(device: exampleDevices.first!)
-}*/

@@ -1,4 +1,3 @@
-
 import SwiftUI
 
 struct GalleryView: View {
@@ -65,9 +64,4 @@ struct GalleryView: View {
     func deleteItem(at index: Int) {
         devices.remove(at: index)
     }
-}
-
-#Preview {
-    GalleryView()
-        .preferredColorScheme(.dark)
 }

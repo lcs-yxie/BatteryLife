@@ -15,7 +15,6 @@ struct AddDeviceView: View {
     @State private var batteryLevel: Float = 0.5
     @Binding var dismissSheet: Bool
     @Binding var device: [Device]
-    @Environment(DeviceViewModel.self) var viewModel
     
     
     
@@ -25,13 +24,6 @@ struct AddDeviceView: View {
                 Section(header: Text("Device Information")){
                     TextField("Name", text: $name)
                     TextField("Device Model", text: $type)
-//                    Picker("Model", selection: $type){
-//                        Text("Iphone").tag("Iphone")
-//                        Text("Ipad").tag("Ipad")
-//                        Text("Macbook").tag("Macbook")
-//                        Text("Airpods").tag("Airpods")
-//                        Text("Watch").tag("Watch")
-//                    }
                     Slider(value: $batteryLevel, in: 0...1, step: 0.01, label: {
                         Text("Battery Level")
                     })
@@ -42,8 +34,8 @@ struct AddDeviceView: View {
                 ToolbarItem(placement: .primaryAction){
                     Button {
                         // Add the new device
-                        _ = Device(name: name, batteryLevels: batteryLevel)
-                        //viewModel.addDevice(newDevice)
+                        let newDevice = Device(name: name, batteryLevels: batteryLevel)
+                        device.append(newDevice)
                         
                         // Dismiss sheet
                         dismissSheet = false
@@ -55,11 +47,3 @@ struct AddDeviceView: View {
         }
     }
 }
-
-/*#Preview {
-
-    AddDeviceView(
-        dismissSheet: Binding.constant(true),
-        device: Binding.constant(exampleDevices)
-        )
-}*/
